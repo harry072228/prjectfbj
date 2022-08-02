@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calendar App Vanilla JS</title>
+
+		<link rel="stylesheet" href="timetable.css" />
+	</head>
+	<body>
+
+		<div id="container">
+			<div id="header">
+				<div id="monthDisplay"></div>
+				<div>
+					<button id="backButton">Back</button>
+					<button id="nextButton">Next</button>
+					<a href="main.html"><button id="HomePage">HomePage</button></a>
+				</div>
+			</div>
+
+			<div id="weekdays">
+				<div>Sunday</div>
+				<div>Monday</div>
+				<div>Tuesday</div>
+				<div>Wednesday</div>
+				<div>Thursday</div>
+				<div>Friday</div>
+				<div>Saturday</div>
+			</div>
+
+			<div id="calendar"></div>
+		</div>
+
+		<div id="newEventModal">
+			<h2>Meeting Topic</h2>
+			<form id="timetable" action="timetable" method="post">
+			<input name="meetingTopic" id="eventTitleInput" placeholder="Meeting Title" />
+			<label for="appt">Choose a time for your meeting:</label>
+
+			<input name="timesObject"
+				type="time"
+				id="timeTitleInput"
+				required
+			/>
+			<br /><br />
+			<select name="departmentObject" id="departmentTitleInput">
+				<optgroup  label="Department">
+					<option value="Marketing">Marketing</option>
+					<option value="Accounting">Accounting</option>
+				</optgroup>
+			</select>
+
+			<button type="submit" id="saveButton">Save</button>
+			<button id="cancelButton">Cancel</button>
+		</div>
+
+		<div id="deleteEventModal">
+			<h2>Topic</h2>
+
+			<p id="eventText"></p>
+
+			<button id="deleteButton">Delete</button>
+			<button id="closeButton">Close</button>
+		</div>
+
+		<div id="modalBackDrop"></div>
+
+		</form>
+
+		
+
+		
+
+		<script src="./timetable.js"></script>
+	</body>
+</html>

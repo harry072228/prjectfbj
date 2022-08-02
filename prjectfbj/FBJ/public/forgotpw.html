@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8" />
+	<!----<title>Login Form Design | CodeLab</title>---->
+	<link rel="stylesheet" href="loginPage.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="title">Forgot Password</div>
+		<form action="forgot" method="post" id="forgot-form">
+			<div class="field">
+				<input id="username" type="text" name="username" required />
+				<label>username</label>
+			</div>
+			<div class="field">
+				<input id="email" type="text" name="email" required />
+				<label>Email</label>
+			</div>
+			<div class="field">
+				<input type="submit" value="Send" />
+			</div>
+			<div class="signup-link">
+				Not a member? <a href="./register.html">Signup now</a>
+			</div>
+		</form>
+		<div>
+			<br>
+			<a href="/connect/google" class="btn btn-success">Sign in With Google</a>
+		</div>
+	</div>
+	<script type="module" script src="forgotpw.js"></script>
+</body>
+
+</html>

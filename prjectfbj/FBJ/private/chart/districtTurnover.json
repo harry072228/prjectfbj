@@ -1,0 +1,36 @@
+{
+	"status": "success",
+	"data": [
+		{
+			"id": 1,
+			"district_name": "Boston",
+			"district_turnover": 617594
+		},
+		{
+			"id": 2,
+			"district_name": "Worcester",
+			"district_turnover": 181045
+		},
+		{
+			"id": 3,
+			"district_name": "Springfield",
+			"district_turnover": 153060
+		},
+		{
+			"id": 4,
+			"district_name": "Lowell",
+			"district_turnover": 106519
+		},
+		{
+			"id": 5,
+			"district_name": "Cambridge",
+			"district_turnover": 105162
+		},
+		{
+			"id": 6,
+			"district_name": "New Bedford",
+			"district_turnover": 95072
+		}
+	],
+	"message": "Successfully! All records has been fetched."
+}

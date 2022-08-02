@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!----======== CSS ======== -->
+		<!-- <link rel="stylesheet" href="style.css" /> -->
+		<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="/main.css">
+		<link rel="stylesheet" href="chart.css" />
+	  
+		<!----===== Boxicons CSS ===== -->
+
+		<title>FBJ</title>
+	  </head>
+
+	<body>
+		<nav class="sidebar close">
+			<header>
+			  <div class="image-text">
+				<span class="image">
+				  <img src="/logo.png" alt="">
+				</span>
+		
+				<div class="text logo-text">
+				  <span class="name">Hello</span>
+				  <span class="profession">Welcome</span>
+				</div>
+			  </div>
+		
+			  <i class="bx bx-chevron-right toggle"></i>
+			</header>
+		
+			<div class="menu-bar">
+			  <div class="menu">
+				
+		
+		
+				<ul class="menu-links">
+					<li class="nav-link">
+					  <a href="/main.html">
+						<i class="bx bx-home-alt icon"></i>
+						<span class="text nav-text">HomePage</span>
+					  </a>
+					</li>
+					</form>
+		  
+					<li class="nav-link">
+					  <a href="">
+						<i class="bx bx-bar-chart-alt-2 icon"></i>
+						<span class="text nav-text">Performance</span>
+					  </a>
+					</li>
+		  
+					<li class="nav-link">
+					  <a href="/kanbanMain.html">
+						<i class="bx bx-briefcase icon"></i>
+						<span class="text nav-text">Todo List</span>
+					  </a>
+					</li>
+		  
+					<li class="nav-link">
+					  <a href="/timetable.html">
+						<i class='bx bxs-calendar icon'></i>
+						<span class="text nav-text">Timetable</span>
+					  </a>
+					</li>
+		  
+					<li class="nav-link">
+					  <a href="/chatroom/chatroom.html">
+						<i class="bx bx-chat icon"></i>
+						<span class="text nav-text">Chatroom</span>
+					  </a>
+					</li>
+		  
+					<li class="nav-link">
+					  <a href="/profile.html">
+						<i class='bx bx-user icon'></i>
+						<span class="text nav-text">profile</span>
+					  </a>
+					</li>
+		  
+					<li class="nav-link">
+					  <a href="/management.html">
+						<i class='bx bx-group icon'></i>
+						<span class="text nav-text">Member Management</span>
+					  </a>
+					</li>
+			  </div>
+			  <div class="bottom-content">
+				<form class="logoutForm" method="POST" action="/logout">
+				
+				  <li class="">
+					<a href="" id="logout-btn">
+					  <i class="bx bx-log-out icon" ></i>
+					  <span class="text nav-text" >Logout</span>
+					</a>
+				  </li>
+				</form>
+		
+				<li class="mode">
+				  <div class="sun-moon">
+					<i class="bx bx-moon icon moon"></i>
+					<i class="bx bx-sun icon sun"></i>
+				  </div>
+				  <span class="mode-text text">Dark mode</span>
+		
+				  <div class="toggle-switch">
+					<span class="switch"></span>
+				  </div>
+				</li>
+			  </div>
+			</div>
+		  </nav>
+		<div class=".mainContainer">
+			<a class="fa-solid fa-angles-left" href="/main.html"></a>
+			<div class="chartContainer">
+				<canvas id="myChart"></canvas>
+			</div>
+			<div class="changeChart">
+				<!-- <select name="charts" class="typeOfCharts">
+					<option value="0">Bar Chart</option>
+					<option value="1">Line Chart</option>
+					<option value="2">Doughnut Chart</option>
+					<option value="3">Pie Chart</option>
+					<option value="4">Polar Area Chart</option>
+					<option value="5">Radar Chart</option>
+				</select> -->
+				<select name="charts" class="typeOfCharts">
+					<option value="0">Bar Chart</option>
+					<option value="2">Doughnut Chart</option>
+					<option value="3">Pie Chart</option>
+					<option value="4">Polar Area Chart</option>
+					<option value="5">Radar Chart</option>
+				</select>
+
+
+
+				<div class="switchToAPIChart">
+					<button class="districtTurnover">District Turnover</button>
+					<button class="departmentTurnover">Department Turnover</button>
+					<button class="employeePerformance">
+						Employee Performance
+					</button>
+					<button class="netProfit">Net Profit</button>
+				</div>
+			</div>
+			<div class="addAndRemove">
+				<div class="controlPanel">
+					<label for="data">Data</label>
+					<input name="data" class="data" type="number" />
+					<label for="category">Category:</label>
+					<input name="category" class="category" type="text" />
+				</div>
+				<button onclick="addData(myChart)">Add Data</button>
+				<button onclick="removeData(myChart)">Remove Data</button>
+			</div>
+		</div>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+			integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="chart.js"></script>
+		
+
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="chatroom.css" />
+		<title>Chatroom</title>
+	</head>
+	<body>
+		<div class="chat-container">
+			<header class="chat-header">
+				<h1>
+					<a class="fa-solid fa-angles-left" href="/main.html"></a> Chatroom
+				</h1>
+
+				<div class="groupInfo none">
+					<h3 class="memberHeader">Members:</h3>
+					<div class="groupMemberList"></div>
+				</div>
+				<div class="button">
+					<div class="btn findMember">Search User</div>
+					<div class="btn newGroup">New Group</div>
+				</div>
+			</header>
+			<main class="chat-main">
+				<div class="chat-sidebar">
+					<h3><i class="fas fa-comments"></i> Current Chat</h3>
+					<h2 id="chat-name">Public Channel</h2>
+					<h3><i class="fas fa-users"></i> Recent Chat</h3>
+					<ul id="chatList">
+						<div id="publicChannel" value="0">Public Channel</div>
+					</ul>
+				</div>
+				<div class="chat-messages"></div>
+			</main>
+			<div class="chat-form-container">
+				<form id="chat-form" action="/sendChat" method="POST">
+					<input
+						id="msg"
+						type="text"
+						placeholder="Enter Message"
+						required
+						autocomplete="off"
+					/>
+					<button class="btn"><i class=""></i> Send</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="chatroom.js"></script>
+	</body>
+</html>

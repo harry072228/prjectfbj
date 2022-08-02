@@ -1,0 +1,133 @@
+body{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: arial;
+	line-height: 1.4;
+	height: 100vh;
+	background-color: #ffffff;
+	background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+	}
+
+	.myKanban{
+		font-size: 30px;
+		font-weight: 500px;
+		color: var(--text-color);
+		padding: 20px;
+	
+	
+	}
+
+	.input_field {
+	  height: 2rem;
+	  margin-bottom: 3rem;
+	  
+	}
+	
+	.text_input {
+	  border: 1px solid #c3c3c3;
+	  border-radius: 5px;
+	  width: 30%;
+	  height: 100%;
+	  padding-left: 0.6rem;
+	}
+	/*button*/
+	.kanban-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.kanban-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.kanban-hover:focus {
+  outline: none;
+}
+
+.kanban-hover.bn20 {
+  background-image: linear-gradient(
+    to right,
+    #667eea,
+    #764ba2,
+    #6b8dd6,
+    #8e37d7
+  );
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+/*----------button and kanban box------------*/
+	
+	/* 標題div*/
+	
+	#kanbanArea{
+		display: flex;
+		flex-wrap: wrap ;
+		overflow-x:auto;
+		padding: 20px;
+
+	}
+	.area{
+		height: 100px;
+		width: 200px;
+		background-color: #8e37d7;
+		margin: 10px;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		box-shadow: -10px 8px 0px rgb(196 181 253);
+	}
+
+	.del{
+		border-radius: 50px 50px 50px 50px;
+		height: 20px;
+		width: 20px;
+		padding: 10px;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		background-color: #6b8dd6;
+		color: #ffffff;
+		border: none;
+		cursor: pointer;
+		
+		
+		
+
+
+	}
+	
+/*-----------------------*/
+	.titleName{
+		height: auto;
+		width: auto;
+		font-size: 20px;
+		color: #fff;
+		text-align: center;
+		padding: 10px;
+
+	}
+
+
+
+
+
+
+	

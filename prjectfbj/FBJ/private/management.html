@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!----======== CSS ======== -->
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="/management.css" />
+  <link rel="stylesheet" href="/tags.css" />
+  <link rel="stylesheet" href="main.css">
+
+
+
+
+  <!----===== Boxicons CSS ===== -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+  <title>FBJ</title>
+</head>
+
+
+<body>
+
+      <table>
+				<ul class="menu-links">
+					<li class="nav-link">
+					  <a href="/main.html">
+						<i class="bx bx-home-alt icon"></i>
+						<span class="text nav-text">HomePage</span>
+					  </a>
+					</li>
+          <li class="nav-link">
+        <caption>User List</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Created</th>
+            <th scope="col">Status</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+
+        <tbody id="userArea">
+          <input type="text" class="search" placeholder="Search...">
+          <input type="text" id="tag-input1">
+          <tr>
+            <td scope="row">Sheldon Cooper</td>
+            <td>07/01/2016</td>
+            <td>Active</td>
+            <td>scooper@@caltech.edu</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <script type="module" script src="./main.js"></script>
+      <script src="./tags.js"></script>
+      <script type="module" src="./management.js"></script>
+
+</body>
+
+
+</html>

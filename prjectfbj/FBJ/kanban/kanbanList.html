@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="kanbanList.css" />
+  </head>
+  <body>
+
+<!-- model -->
+    <!-- <div class="modal" id="todo_form">
+        <div class="header">
+          <div class="title">Add To do</div>
+          <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body">
+          <div>Topic</div>
+          <input class="addCul" type="text" id="topic">
+          <div>Content</div>
+          <input class="addCul" type="text" id="content" />
+          <div>DeadLine</div>
+<input type="datetime-local" id="time"name="meeting-time" value="2018-06-12T19:30">
+          <input type="submit" value="submit" id="todo_submit" />
+        </div>
+      </div> -->
+<!-- model -->
+      <div class="container">
+    <div class="todo_title"><span></span></div>
+  
+    <div class="input_field">
+        <form name="maintopicform" class="mainList" id="mainLT">
+    <div><input name="itembox" id="textBox" class="text_input" type="text" placeholder="Add your New Kanban Item" />
+    <button name="itmebutton" id="addButton" class="add_button" type="submit" >Submit</button>
+  </form>
+  </div>
+  <div><input name="User_Name" id="userBox" class="textInputUser" type="text" placeholder="Search User By Email" />
+  <button type="submit" id="addUserButton" class="add_User"  >Add Member</button></div>
+  </div>
+ 
+    </div>
+
+    <div id="bigBox"></div>
+    <a href="kanbanMain.html"><button class="home">Back Page</button></a>
+<div id="overlay" class="active"></div>
+    <script src="kanbanList.js"></script>
+  </body>
+</html>

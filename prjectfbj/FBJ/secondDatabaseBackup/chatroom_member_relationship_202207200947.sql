@@ -1,0 +1,66 @@
+INSERT INTO public.chatroom_member_relationship (chatroom_id,user_id) VALUES
+	 (3,2),
+	 (4,12),
+	 (4,2),
+	 (1,10),
+	 (2,10),
+	 (1,10),
+	 (4,10),
+	 (34,10),
+	 (34,12),
+	 (38,15);
+INSERT INTO public.chatroom_member_relationship (chatroom_id,user_id) VALUES
+	 (38,12),
+	 (39,10),
+	 (39,12),
+	 (41,34),
+	 (41,10),
+	 (42,12),
+	 (42,10),
+	 (43,12),
+	 (43,10),
+	 (44,12);
+INSERT INTO public.chatroom_member_relationship (chatroom_id,user_id) VALUES
+	 (44,10),
+	 (45,12),
+	 (45,10),
+	 (46,12),
+	 (46,10),
+	 (46,2),
+	 (47,12),
+	 (47,10),
+	 (48,12),
+	 (48,10);
+INSERT INTO public.chatroom_member_relationship (chatroom_id,user_id) VALUES
+	 (49,12),
+	 (49,10),
+	 (50,12),
+	 (50,10),
+	 (53,43),
+	 (53,10),
+	 (56,12),
+	 (56,53),
+	 (58,55),
+	 (58,10);
+INSERT INTO public.chatroom_member_relationship (chatroom_id,user_id) VALUES
+	 (59,10),
+	 (59,55),
+	 (59,12),
+	 (60,55),
+	 (60,10),
+	 (60,12),
+	 (60,34),
+	 (60,42),
+	 (60,39),
+	 (60,5);
+INSERT INTO public.chatroom_member_relationship (chatroom_id,user_id) VALUES
+	 (60,5),
+	 (62,55),
+	 (62,56),
+	 (62,12),
+	 (62,10),
+	 (62,5),
+	 (62,44),
+	 (79,65),
+	 (79,6),
+	 (79,62);

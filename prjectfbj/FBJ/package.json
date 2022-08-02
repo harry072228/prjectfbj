@@ -1,0 +1,50 @@
+{
+  "name": "fbj",
+  "version": "1.0.0",
+  "description": "npm init npm install ts-node @types/node typescript express @types/express express-session @types/express-session npm install --save-dev --save-exact prettier npm install winston npm install formidable @types/formidable npm install pg @types/pg dotenv npm install xlsx npm install socket.io npm install bcryptjs @types/bcryptjs npm install cross-fetch npm install grant  dotenv @types/dotenv",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoYNLi/FBJ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeoYNLi/FBJ/issues"
+  },
+  "homepage": "https://github.com/LeoYNLi/FBJ#readme",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/express-session": "^1.17.5",
+    "@types/formidable": "^2.0.5",
+    "@types/node": "^18.0.1",
+    "@types/nodemailer": "^6.4.4",
+    "@types/pg": "^8.6.5",
+    "bcryptjs": "^2.4.3",
+    "chalk": "^5.0.1",
+    "cross-fetch": "^3.1.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "formidable": "^2.0.1",
+    "grant": "^5.4.21",
+    "nodemailer": "^6.7.7",
+    "pg": "^8.7.3",
+    "socket.io": "^4.5.1",
+    "ts-node": "^10.8.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4",
+    "winston": "^3.8.1",
+    "xlsx": "^0.18.5",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
